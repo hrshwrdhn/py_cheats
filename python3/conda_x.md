@@ -27,13 +27,24 @@ https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe
 https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
 ```
+**Once you have downloaded miniconda3, you can run the following command:**
+$ sh Miniconda3-latest-Linux-x86_64.sh
+
 #  create new environment
 ```
 $ conda create -n environment_name python = 3.7.6
 $ conda create --name python3-env python pip
 $ conda create --name python36-env python=3.6 pip=20.0
 ```
-
+****
+```
+$ conda env create -f environment.yml
+```
+created a list of packages used while writing this book which is saved in the 
+environment.yml.
+```
+$ conda env create -f environment.yml
+```
 # Activating an existing environment
 ```
 $ conda activate basic-scipy-env
@@ -56,5 +67,11 @@ $
 ```
 $ conda activate basic-scipy-env
 $ conda install numba
-
+$ pip install scipy
 ```
+It might be possible that some packages are not available in the conda repo.
+Thus, installing using pip would be the most preferred way
+
+
+
+
