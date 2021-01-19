@@ -48,4 +48,13 @@ $ conda activate basic-scipy-env
 $ (basic-scipy-env) $ conda deactivate
 ```
 **code** 
-``` $```
+``` 
+$
+```
+
+# Installing a package into an existing environment
+```
+$ conda activate basic-scipy-env
+$ conda install numba
+
+```
