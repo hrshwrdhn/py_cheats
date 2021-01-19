@@ -27,3 +27,25 @@ https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe
 https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
 ```
+#  create new environment
+```
+$ conda create -n environment_name python = 3.7.6
+$ conda create --name python3-env python pip
+$ conda create --name python36-env python=3.6 pip=20.0
+```
+
+# Activating an existing environment
+```
+$ conda activate basic-scipy-env
+```
+**code** 
+```
+(basic-scipy-env) $
+```
+
+# Deactivate the current environment
+```
+$ (basic-scipy-env) $ conda deactivate
+```
+**code** 
+``` $```
